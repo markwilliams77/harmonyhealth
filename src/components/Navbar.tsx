@@ -18,6 +18,7 @@ export const Navbar = () => {
   }, []);
 
   const navLinks = [
+    { name: 'About', href: '/about' },
     { name: 'Destinations', href: '/destinations' },
     { name: 'Treatments', href: '/treatments' },
   ];

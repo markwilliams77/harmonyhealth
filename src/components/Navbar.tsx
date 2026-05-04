@@ -46,9 +46,13 @@ export const Navbar = () => {
           >
             Start Your Journey
           </button>
-          <button className="bg-primary-teal text-white px-6 py-2.5 rounded-full hover:bg-primary-teal/90 transition-all hover:shadow-lg hover:shadow-primary-teal/20">
+          <a 
+            href="/Harmony Health Brochure.pdf"
+            download="Harmony_Health_Brochure.pdf"
+            className="bg-primary-teal text-white px-6 py-2.5 rounded-full hover:bg-primary-teal/90 transition-all hover:shadow-lg hover:shadow-primary-teal/20 inline-block"
+          >
             Download Brochure
-          </button>
+          </a>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -85,9 +89,14 @@ export const Navbar = () => {
             >
               Start Your Journey
             </button>
-            <button onClick={() => setIsMobileMenuOpen(false)} className="bg-primary-teal text-white px-6 py-4 rounded-xl text-center font-bold">
+            <a 
+              href="/Harmony Health Brochure.pdf"
+              download="Harmony_Health_Brochure.pdf"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="bg-primary-teal text-white px-6 py-4 rounded-xl text-center font-bold block"
+            >
               Download Brochure
-            </button>
+            </a>
           </motion.div>
         )}
       </AnimatePresence>
